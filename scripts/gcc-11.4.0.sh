@@ -40,7 +40,7 @@ PKG_NAME=gcc-${PKG_VERSION}
 PKG_DIR_NAME=gcc-${PKG_VERSION}
 PKG_TYPE=.tar.xz
 PKG_URLS=(
-	"https://ftpmirror.gnu.org/gnu/gcc/gcc-${PKG_VERSION}/gcc-${PKG_VERSION}${PKG_TYPE}"
+	"http://www.yuanpeirong.com/gcc/gcc-11.4.0.tar.xz"
 )
 
 PKG_PRIORITY=main
@@ -111,7 +111,7 @@ PKG_CONFIGURE_FLAGS=(
 	)
 	--disable-rpath
 	--disable-win32-registry
-	--disable-nls
+	--enable-nls
 	--disable-werror
 	--disable-symvers
 	#
